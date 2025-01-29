@@ -3,7 +3,7 @@
  * @returns {number} the length of the array
  */
 function getLength(numbers) {
-  // TODO
+  return numbers.Length;
 }
 
 /**
@@ -11,7 +11,29 @@ function getLength(numbers) {
  * @returns {number} the sum of the numbers
  */
 function getSum(numbers) {
-  // TODO
+  let Sum = 0;
+  for (const n of numbers) {
+    Sum += n;
+  }
+  return Sum;
+}
+{
+  let Sum = 0;
+  let i = 0;
+  while (i < numbers.Length) {
+    const number = numbers[i];
+    Sum += number;
+    i += 1;
+  }
+  return Sum;
+}
+{
+  let sum = 0;
+  for (let i = 0; i < numbers.Length; i++) {
+    const number = numbers[i];
+    sum += number;
+  }
+  return Sum;
 }
 
 /**
